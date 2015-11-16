@@ -53,6 +53,17 @@ function generateSphere(shape_no, x, y, z, color)
 	// scene node
 	var scene = document.getElementById("scene");
 	scene.setAttribute("id", "scene");
+}
+
+function generateSphere(shape_no, x, y, z, color)
+{
+
+	// get position from x y z cordinates
+	var position = x + " " + y + " " + z;
+
+	// scene node
+	var scene = document.getElementById("scene");
+	scene.setAttribute("id", "scene");
 
 	// configure transformation
 	var trans = document.createElement("transform");
@@ -134,7 +145,6 @@ function generateSphere(shape_no, x, y, z, color)
 	scene.appendChild(time_route);
 }
 
-// first row of spheres
 generateSphere("0", "6","0","3","green");
 generateSphere("1", "3","0","3","green");
 generateSphere("2", "0","0","3","green");
@@ -169,10 +179,3 @@ generateSphere("22", "0","0","9","green");
 generateSphere("23", "-3","0","9","green");
 generateSphere("24", "-6","0","9","green");
 
-//               scake           x y z         color
-//generateBackdrop("20 1 20", "9", "0","-2","0", "blue");
-//generateBackdrop("1 20 20", "11", "-20","0","-0", "black");
-//generateBackdrop("1 20 20", "12", "20","0","0", "black");
-//generateBackdrop("20 20 1", "12", "0","0","20", "black");
-//generateBackdrop("20 20 1", "12", "0","0","20", "black");
-//generateBackdrop("20 1 20", "12", "0","20","0", "black");

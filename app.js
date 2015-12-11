@@ -69,7 +69,7 @@ $(document).ready(function () {
 
     var scene, camera, renderer;
     var geometry, material, mesh;
-    var num_spheres = 20;
+    var num_spheres = 25;
 
     init();
     animate();
@@ -79,7 +79,7 @@ $(document).ready(function () {
         scene = new THREE.Scene();
 
         camera =  new THREE.OrthographicCamera( window.innerWidth / - 2, window.innerWidth / 2, window.innerHeight / 2, window.innerHeight / - 2, 10, 10000);
-        camera.position.z = 1000;
+        camera.position.z = 1500;
         camera.position.y = 300;
         camera.lookAt (new THREE.Vector3( 0, 0, 0 ));
 
@@ -88,12 +88,12 @@ $(document).ready(function () {
         renderer.setSize( window.innerWidth * 0.75, window.innerHeight * 0.75);
         document.body.appendChild( renderer.domElement );
 
-        var increment = 65;
+        var increment = 50;
         var start_x = -1 * increment * num_spheres * 0.5;
         for(var i = 0; i < num_spheres; ++i)
         {
             // sphere geometry
-            var sphere_radius = 20;
+            var sphere_radius = 15;
             var segments = 100;
             var rings = 100;
         

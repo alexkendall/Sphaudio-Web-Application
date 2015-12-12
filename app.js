@@ -86,7 +86,9 @@ $(document).ready(function () {
 
         renderer = new THREE.WebGLRenderer({ antialias: true });
         renderer.setSize( window.innerWidth * 0.75, window.innerHeight * 0.75);
-        document.body.appendChild( renderer.domElement );
+        document.getElementById("scene_container").appendChild( renderer.domElement );
+
+        // enclose this in a div
 
         var increment = 50;
         var start_x = -1 * increment * num_spheres * 0.5;
@@ -124,11 +126,11 @@ $(document).ready(function () {
 
             // generate fllor
             var geometry = new THREE.BoxGeometry(10, 1, 1);
-			var material = new THREE.MeshBasicMaterial( {color: 0xffffff} );
-			var rect = new THREE.Mesh( geometry, material );
-			rect.position.set(position,0,0);
-			rect.name = "rect" + i;
-			scene.add( rect );
+			      var material = new THREE.MeshBasicMaterial( {color: 0xffffff} );
+			      var rect = new THREE.Mesh( geometry, material );
+			      rect.position.set(position,0,0);
+			      rect.name = "rect" + i;
+			      scene.add( rect );
         }
 
         // create a point light

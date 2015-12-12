@@ -83,8 +83,8 @@
             </div> -->
 
 
-            <div id="tableWrapper">
-                <div id="songChoice" class="container">          
+            <div id="tableWrapper" style="height: 500px;">
+                <div id="songChoice" class="container" style="height: 100%;">          
                     <table class="table table-hover">
                         <thead>
                             <tr>
@@ -95,7 +95,7 @@
                         </thead>
                         <tbody>
 
-                            <tr id="1" onclick="switchSong('./audio/Odesza - Above The Middle.mp3', 1)">
+                            <tr id="1" style="background-color: #878FA1" onclick="switchSong('./audio/Odesza - Above The Middle.mp3', 1)">
                                 <td>Above The Middle</td>
                                 <td>Odesza</td>
                                 <td>Unknown</td>
@@ -110,9 +110,9 @@
                                 <td>Calvin Harris</td>
                                 <td></td>
                             </tr>
-                            <tr onclick="alert('load song here')">
-                                <td>John</td>
-                                <td>Doe</td>
+                            <tr onclick="switchSong('./audio/Coldplay - A Sky Full Of Stars (Official audio).mp3', 4)">
+                                <td>A Sky Full of Stars</td>
+                                <td>Coldplay</td>
                                 <td>john@example.com</td>
                             </tr>
                             <tr onclick="alert('test')">

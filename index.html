@@ -57,47 +57,52 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr onclick="alert('you have clicked')">
+                    <tr onclick="songClick(1)">
                         <td>Above The Middle</td>
                         <td>Odesza</td>
                         <td>Unknown</td>
                     </tr>
-                    <tr onclick="alert('you have clicked')">
+                    <tr onclick="songClick(2)">
                         <td>Mary</td>
                         <td>Moe</td>
                         <td>mary@example.com</td>
                     </tr>
-                    <tr onclick="alert('you have clicked')">
+                    <tr onclick="songClick(3)">
                         <td>July</td>
                         <td>Dooley</td>
                         <td>july@example.com</td>
                     </tr>
-                    <tr onclick="alert('you have clicked')">
+                    <tr onclick="songClick(4)">
                         <td>John</td>
                         <td>Doe</td>
                         <td>john@example.com</td>
                     </tr>
-                    <tr onclick="alert('you have clicked')">
+                    <tr onclick="songClick(5)">
                         <td>John</td>
                         <td>Doe</td>
                         <td>john@example.com</td>
                     </tr>
-                    <tr onclick="alert('you have clicked')">
+                    <tr onclick="songClick(6)">
                         <td>John</td>
                         <td>Doe</td>
                         <td>john@example.com</td>
                     </tr>
-                    <tr onclick="alert('you have clicked')">
+                    <tr onclick="songClick(7)">
                         <td>John</td>
                         <td>Doe</td>
                         <td>john@example.com</td>
                     </tr>
-                    <tr onclick="alert('you have clicked')">
+                    <tr onclick="songClick(8)">
                         <td>John</td>
                         <td>Doe</td>
                         <td>john@example.com</td>
                     </tr>
-                    <tr onclick="alert('you have clicked')">
+                    <tr onclick="songClick(9)">
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr onclick="songClick(10)">
                         <td>John</td>
                         <td>Doe</td>
                         <td>john@example.com</td>
@@ -106,17 +111,42 @@
             </table>
         </div>
     </div>
-
-    <br>
-
-    <div id="content">
-        <form>
-            <input name="song" type="file" accept="audio/*">
-            <br>
-            <input type="submit">
-        </form>
-    </div>
 </body>
+
+<script type="text/javascript">
+    function songClick(number) {
+        if (number === 1){
+            window.location = "sphaudio.html?4";   
+        }
+        if (number === 2){
+            window.location = "sphaudio.html?5";
+        }
+        if (number === 3){
+            window.location = "sphaudio.html?6";
+        }
+        if (number === 4){
+            window.location = "sphaudio.html?7";
+        } 
+        if (number === 5){
+            window.location = "sphaudio.html?8";
+        } 
+        if (number === 6){
+            window.location = "sphaudio.html?9";
+        } 
+        if (number === 7){
+            window.location = "sphaudio.html?10";
+        } 
+        if (number === 8){
+            window.location = "sphaudio.html?11";
+        } 
+        if (number === 9){
+            window.location = "sphaudio.html?12";
+        } 
+        if (number === 10){
+            window.location = "sphaudio.html?13";
+        }     
+    }
+</script>
 
 </html>
 

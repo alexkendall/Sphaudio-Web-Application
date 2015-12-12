@@ -1,4 +1,4 @@
-  <html> 
+<html> 
         <head> 
             <title>SPHAUDIO</title>             
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -48,15 +48,39 @@
 
             
             <script type="text/javascript" src="app.js"></script>
+            <script>
+              function switchSong(name, i){
+                document.getElementById('audioElement').src = name;
+                document.getElementById(i).style.backgroundColor = '#878FA1';
+                for (x = 1; x < 4; x++){
+                  if (x === i) {
+                    
+                  }
+                  else {
+                    document.getElementById(x).style.backgroundColor = '#ffffff';
+                  }
+                }
+              } 
+            </script>
 
-
-            <audio id="audioElement" src="./audio/Odesza - Above The Middle.mp3"></audio>
+            <div>
+            <audio controls id="audioElement" style="margin-top:10px; width: 100%; align: center;">
+              <source src="./audio/Odesza - Above The Middle.mp3">
+            </audio> 
+            </div>
+            <!-- <audio id="audioElement" src="./audio/Odesza - Above The Middle.mp3"></audio>
             <div class="container-fluid">
+=======
+
+
+            <audio autoplay id="audioElement" src="./audio/Odesza - Above The Middle.mp3"></audio>
+            <div id="audioButtons" class="container-fluid">
+>>>>>>> 2847cfce9c2a51943dc70dcc6be7a97ade70645b
               <button type="button" class="btn btn-primary" onclick="document.getElementById('audioElement').play()">Play Music</button>
               <button type="button" class="btn btn-danger" onclick="document.getElementById('audioElement').pause()">Pause Music</button>
               <button type="button" class="btn btn-success" onclick="document.getElementById('audioElement').volume+=0.1">Increase Volume</button>
               <button type="button" class="btn btn-success" onclick="document.getElementById('audioElement').volume-=0.1">Decrease Volume</button>
-            </div>
+            </div> -->
 
 
             <div id="tableWrapper">
@@ -70,20 +94,21 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr onclick="document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';">
+
+                            <tr id="1" onclick="switchSong('./audio/Odesza - Above The Middle.mp3', 1)">
                                 <td>Above The Middle</td>
                                 <td>Odesza</td>
                                 <td>Unknown</td>
                             </tr>
-                            <tr onclick="document.getElementById('audioElement').src = './audio/11 Particles of the Universe (Elysian Fields).mp3'">
+                            <tr id="2" onclick="switchSong('./audio/11 Particles of the Universe (Elysian Fields).mp3', 2)">
                                 <td>Particles of the Universe</td>
                                 <td>Dan Romer, Benh Zeitlin</td>
                                 <td>Beasts of the Southern Wild</td>
                             </tr>
-                            <tr onclick="document.getElementById('audioElement').src = ./audio/11 Particles of the Universe (Elysian Fields).mp3">
-                                <td>July</td>
-                                <td>Dooley</td>
-                                <td>july@example.com</td>
+                            <tr id="3" onclick="switchSong('./audio/Calvin Harris Disciples - How Deep Is Your Love.mp3', 3)">
+                                <td>How Deep is Your Love</td>
+                                <td>Calvin Harris</td>
+                                <td></td>
                             </tr>
                             <tr onclick="alert('load song here')">
                                 <td>John</td>

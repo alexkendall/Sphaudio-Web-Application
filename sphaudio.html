@@ -62,15 +62,18 @@
                 }
               } 
             </script>
-
-
-            <audio id="audioElement" src="./audio/Odesza - Above The Middle.mp3"></audio>
+            <div>
+            <audio controls id="audioElement" style="margin-top:10px; width: 100%; align: center;">
+              <source src="./audio/Odesza - Above The Middle.mp3">
+            </audio> 
+            </div>
+            <!-- <audio id="audioElement" src="./audio/Odesza - Above The Middle.mp3"></audio>
             <div class="container-fluid">
               <button type="button" class="btn btn-primary" onclick="document.getElementById('audioElement').play()">Play Music</button>
               <button type="button" class="btn btn-danger" onclick="document.getElementById('audioElement').pause()">Pause Music</button>
               <button type="button" class="btn btn-success" onclick="document.getElementById('audioElement').volume+=0.1">Increase Volume</button>
               <button type="button" class="btn btn-success" onclick="document.getElementById('audioElement').volume-=0.1">Decrease Volume</button>
-            </div>
+            </div> -->
 
 
             <div id="tableWrapper">
@@ -95,10 +98,10 @@
                                 <td>Dan Romer, Benh Zeitlin</td>
                                 <td>Beasts of the Southern Wild</td>
                             </tr>
-                            <tr id="3" onclick="switchSong('./audio/11 Particles of the Universe (Elysian Fields).mp3', 3)">
-                                <td>July</td>
-                                <td>Dooley</td>
-                                <td>july@example.com</td>
+                            <tr id="3" onclick="switchSong('./audio/Calvin Harris Disciples - How Deep Is Your Love.mp3', 3)">
+                                <td>How Deep is Your Love</td>
+                                <td>Calvin Harris</td>
+                                <td></td>
                             </tr>
                             <tr onclick="alert('load song here')">
                                 <td>John</td>

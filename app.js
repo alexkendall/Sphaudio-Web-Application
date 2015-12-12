@@ -5,6 +5,49 @@
 
 $(document).ready(function () {
 
+  var songNumber = window.location.search.replace("?", "");
+  if(songNumber == "4")
+  {
+      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+  }
+  if(songNumber == "5")
+  {
+      document.getElementById('audioElement').src = './audio/11 Particles of the Universe (Elysian Fields).mp3';
+  }
+  if(songNumber == "6")
+  {
+      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+  }
+  if(songNumber == "7")
+  {
+      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+  }
+  if(songNumber == "8")
+  {
+      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+  }
+  if(songNumber == "9")
+  {
+      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+  }
+  if(songNumber == "10")
+  {
+      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+  }
+  if(songNumber == "11")
+  {
+      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+  }
+  if(songNumber == "12")
+  {
+      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+  }
+  if(songNumber == "13")
+  {
+      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+  }
+
+
   var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   var audioElement = document.getElementById('audioElement');
   var audioSrc = audioCtx.createMediaElementSource(audioElement);

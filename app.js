@@ -178,7 +178,7 @@ $(document).ready(function () {
       var c1,c2,c3,c4,c5;
       var themeNum = window.location.search.replace("?", "");
       if (themeNum == "1") {
-        console.log("theme 1");
+        //console.log("theme 1");
         c1 = 0x35A8DC;
         c2 = 0x349396;
         c3 = 0xCFB028;
@@ -186,7 +186,7 @@ $(document).ready(function () {
         c5 = 0xE1094E;
       }
       else if (themeNum == "2") {
-        console.log("theme 2");
+        //console.log("theme 2");
         c1 = 0xEEC438;
         c2 = 0xFC960F;
         c3 = 0xF7480E;
@@ -194,7 +194,7 @@ $(document).ready(function () {
         c5 = 0xB10778;
       }
       else if (themeNum == "3") {
-        console.log("theme 3");
+        //console.log("theme 3");
         c1 = 0x91C9C1;
         c2 = 0x3F90B5;
         c3 = 0x368992;
@@ -202,7 +202,7 @@ $(document).ready(function () {
         c5 = 0x608A82;
       }
       else {
-        console.log("no theme");
+        //console.log("no theme");
         c1 = 0x00B6FF;
         c2 = 0x00B6FF;
         c3 = 0x00B6FF;

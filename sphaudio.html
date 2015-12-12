@@ -52,7 +52,7 @@
               function switchSong(name, i){
                 document.getElementById('audioElement').src = name;
                 document.getElementById(i).style.backgroundColor = '#878FA1';
-                for (x = 1; x < 4; x++){
+                for (x = 1; x < 7; x++){
                   if (x === i) {
                     
                   }
@@ -108,22 +108,22 @@
                             <tr id="3" onclick="switchSong('./audio/Calvin Harris Disciples - How Deep Is Your Love.mp3', 3)">
                                 <td>How Deep is Your Love</td>
                                 <td>Calvin Harris</td>
-                                <td></td>
+                                <td>How Deep is Your Love - Single</td>
                             </tr>
                             <tr onclick="switchSong('./audio/Coldplay - A Sky Full Of Stars (Official audio).mp3', 4)">
                                 <td>A Sky Full of Stars</td>
                                 <td>Coldplay</td>
-                                <td>john@example.com</td>
+                                <td>Ghost Stories</td>
                             </tr>
                             <tr onclick="alert('test')">
                                 <td>John</td>
                                 <td>Doe</td>
                                 <td>john@example.com</td>
                             </tr>
-                            <tr onclick="alert('test')">
-                                <td>John</td>
-                                <td>Doe</td>
-                                <td>john@example.com</td>
+                            <tr id="6" onclick="switchSong('./audio/Martin Garrix - Forbidden Voices.mp3', 6)">
+                                <td>Martin Garrix</td>
+                                <td>Forbidden Voices</td>
+                                <td>Forbidden Voices</td>
                             </tr>
                             <tr onclick="alert('test')">
                                 <td>John</td>

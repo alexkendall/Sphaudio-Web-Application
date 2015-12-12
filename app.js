@@ -122,6 +122,13 @@ $(document).ready(function () {
             // add the sphere to the scene
             scene.add(sphere);
 
+            // generate fllor
+            var geometry = new THREE.BoxGeometry(10, 1, 1);
+			var material = new THREE.MeshBasicMaterial( {color: 0xffffff} );
+			var rect = new THREE.Mesh( geometry, material );
+			rect.position.set(position,0,0);
+			rect.name = "rect" + i;
+			scene.add( rect );
         }
 
         // create a point light
@@ -207,6 +214,9 @@ $(document).ready(function () {
             var name = "sphere" + i;
             var sphere_ = scene.getObjectByName(name);
 
+            var rect_name = "rect" + i;
+            var rect_ = scene.getObjectByName(rect_name);
+
             var span = (sample_size / num_spheres);
             var start_index = span * i;
             var end_index = start_index + span;
@@ -218,9 +228,18 @@ $(document).ready(function () {
                 amp_sum += amplitude;
 
             }
+            // set sphere and position
             var avg_amplitude = amp_sum / span;
             sphere_.position.set(sphere_.position.x, avg_amplitude, sphere_.position.y);
-            //sphere_.material.color.setRGB(150.0, avg_amplitude / 100.0, 0.0);
+
+            // set leading rectangle and position
+            var ball_height = 30.0;
+            rect_.scale.y = avg_amplitude;
+            rect_.position.set(rect_.position.x, avg_amplitude * 0.5 - ball_height, rect_.position.z);
+
+            rect_.material.color.setRGB(avg_amplitude / 255.0,0.5,0);
+
+            
             var modVal = (i+1)%5;
             if (modVal == 1) {
               sphere_.material.color.setHex(c1);

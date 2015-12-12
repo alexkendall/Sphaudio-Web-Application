@@ -1,4 +1,4 @@
-  <html> 
+<html> 
         <head> 
             <title>SPHAUDIO</title>             
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -62,6 +62,7 @@
                 }
               } 
             </script>
+
             <div>
             <audio controls id="audioElement" style="margin-top:10px; width: 100%; align: center;">
               <source src="./audio/Odesza - Above The Middle.mp3">
@@ -69,6 +70,12 @@
             </div>
             <!-- <audio id="audioElement" src="./audio/Odesza - Above The Middle.mp3"></audio>
             <div class="container-fluid">
+=======
+
+
+            <audio autoplay id="audioElement" src="./audio/Odesza - Above The Middle.mp3"></audio>
+            <div id="audioButtons" class="container-fluid">
+>>>>>>> 2847cfce9c2a51943dc70dcc6be7a97ade70645b
               <button type="button" class="btn btn-primary" onclick="document.getElementById('audioElement').play()">Play Music</button>
               <button type="button" class="btn btn-danger" onclick="document.getElementById('audioElement').pause()">Pause Music</button>
               <button type="button" class="btn btn-success" onclick="document.getElementById('audioElement').volume+=0.1">Increase Volume</button>

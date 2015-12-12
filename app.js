@@ -89,7 +89,7 @@ $(document).ready(function () {
 
 
         renderer = new THREE.WebGLRenderer({ antialias: true });
-        renderer.setSize( window.innerWidth * 0.75, window.innerHeight * 0.75);
+        renderer.setSize( window.innerWidth * 0.75, window.innerHeight * 0.60);
         document.getElementById("scene_container").appendChild( renderer.domElement );
 
         // enclose this in a div

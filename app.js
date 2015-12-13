@@ -48,7 +48,7 @@ $(document).ready(function () {
   }
   if(songNumber == "14")
   {
-    document.getElementById('audioElement').src = 'gone.m4a';
+    document.getElementById('audioElement').src = './audio/gone.m4a';
   }
 
 

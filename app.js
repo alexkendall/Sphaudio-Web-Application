@@ -24,7 +24,7 @@ $(document).ready(function () {
   }
   if(songNumber == "8")
   {
-      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+      document.getElementById('audioElement').src = './audio/Sorry - Justin Bieber.mp3';
   }
   if(songNumber == "9")
   {
@@ -32,19 +32,15 @@ $(document).ready(function () {
   }
   if(songNumber == "10")
   {
-      document.getElementById('audioElement').src = './audio/03 How To Save A Life.m4a';
+      document.getElementById('audioElement').src = './audio/Hozier-From Eden.mp3';
   }
   if(songNumber == "11")
   {
-      document.getElementById('audioElement').src = './audio/04 The One Who Saves.m4a';
+      document.getElementById('audioElement').src = './audio/The Beatles - Come Together.mp3';
   }
   if(songNumber == "12")
   {
-      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
-  }
-  if(songNumber == "13")
-  {
-      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+      document.getElementById('audioElement').src = './audio/Beethoven -Symphony No 5.mp3';
   }
 
 

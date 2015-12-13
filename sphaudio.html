@@ -67,7 +67,15 @@
             <audio controls id="audioElement" style="margin-top:10px; width: 100%; align: center;">
               <source src="./audio/Odesza - Above The Middle.mp3">
             </audio> 
-            </div>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="customize()">Customize</button>
+
+          <script type="text/javascript">
+            function customize() {
+              window.location = "customize.html";
+            }
+          </script>
+
             <!-- <audio id="audioElement" src="./audio/Odesza - Above The Middle.mp3"></audio>
             <div class="container-fluid">
 =======
@@ -138,7 +146,12 @@
                             <tr id="9" onclick="switchSong('./audio/Beethoven -Symphony No 5.mp3', 9)">
                                 <td>Symphony No 5</td>
                                 <td>Beethoven</td>
-                                <td>Symphony No 5/td>
+                                <td>Symphony No 5</td>
+                            </tr>
+                            <tr id="10" onclick="switchSong('Kendrick Lamar - M.A.A.D. City.mp3', 9)">
+                                <td>m.A.A.d city</td>
+                                <td>Kendrick Lamar</td>
+                                <td>good kid, m.A.A.d city</td>
                             </tr>
                         </tbody>
                     </table>

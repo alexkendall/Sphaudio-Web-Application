@@ -16,36 +16,37 @@ $(document).ready(function () {
   }
   if(songNumber == "6")
   {
-      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+      document.getElementById('audioElement').src = './audio/Calvin Harris Disciples - How Deep Is Your Love.mp3';
   }
   if(songNumber == "7")
   {
-      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+      document.getElementById('audioElement').src = './audio/Coldplay - A Sky Full Of Stars (Official audio).mp3';
   }
   if(songNumber == "8")
   {
-      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+      document.getElementById('audioElement').src = './audio/Sorry - Justin Bieber.mp3';
   }
   if(songNumber == "9")
   {
-      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+      document.getElementById('audioElement').src = './audio/Martin Garrix - Forbidden Voices.mp3';
   }
   if(songNumber == "10")
   {
-      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+      document.getElementById('audioElement').src = './audio/Hozier-From Eden.mp3';
   }
   if(songNumber == "11")
   {
-      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+      document.getElementById('audioElement').src = './audio/The Beatles - Come Together.mp3';
   }
   if(songNumber == "12")
   {
-      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+      document.getElementById('audioElement').src = './audio/Beethoven -Symphony No 5.mp3';
   }
   if(songNumber == "13")
   {
-      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+      document.getElementById('audioElement').src = 'Kendrick Lamar - M.A.A.D. City.mp3';
   }
+  
 
 
   var audioCtx = new (window.AudioContext || window.webkitAudioContext)();

@@ -1,6 +1,6 @@
  var sample_size = 200;
  var frequencyData = new Uint8Array(sample_size);
-
+ var offset_y = 100;
 //-----------------------------------------------------------------------
 
 $(document).ready(function () {
@@ -74,7 +74,7 @@ $(document).ready(function () {
 
     var scene, camera, renderer;
     var geometry, material, mesh;
-    var num_spheres = 25;
+    var num_spheres = 40;
 
     init();
     animate();
@@ -82,15 +82,15 @@ $(document).ready(function () {
     function init() {
 
         scene = new THREE.Scene();
-
-        camera =  new THREE.OrthographicCamera( window.innerWidth / - 2, window.innerWidth / 2, window.innerHeight / 2, window.innerHeight / - 2, 10, 10000);
+        var aspect_ratio = 0.3 / 0.7;
+        camera =  new THREE.OrthographicCamera( window.innerWidth * -0.75, window.innerWidth * 0.75, window.innerHeight * 0.3, window.innerHeight * -0.3, 10, 10000);
         camera.position.z = 1500;
         camera.position.y = 300;
         camera.lookAt (new THREE.Vector3( 0, 0, 0 ));
 
 
         renderer = new THREE.WebGLRenderer({ antialias: true });
-        renderer.setSize( window.innerWidth * 0.75, window.innerHeight * 0.60);
+        renderer.setSize( window.innerWidth * 0.75, window.innerHeight * 0.3);
         document.getElementById("scene_container").appendChild( renderer.domElement );
 
         // enclose this in a div
@@ -124,7 +124,7 @@ $(document).ready(function () {
 
             // set position
             var position = start_x + (increment * i);
-            sphere.position.set(position, 0, 0);
+            sphere.position.set(position, -1 * offset_y, 0);
 
             // add the sphere to the scene
             scene.add(sphere);
@@ -133,7 +133,7 @@ $(document).ready(function () {
             var geometry = new THREE.BoxGeometry(10, 1, 1);
 			      var material = new THREE.MeshBasicMaterial( {color: 0xffffff} );
 			      var rect = new THREE.Mesh( geometry, material );
-			      rect.position.set(position,0,0);
+			      rect.position.set(position,-1 * offset_y,0);
 			      rect.name = "rect" + i;
 			      scene.add( rect );
         }
@@ -237,12 +237,12 @@ $(document).ready(function () {
             }
             // set sphere and position
             var avg_amplitude = amp_sum / span;
-            sphere_.position.set(sphere_.position.x, avg_amplitude, sphere_.position.y);
+            sphere_.position.set(sphere_.position.x, avg_amplitude - offset_y, sphere_.position.y);
 
             // set leading rectangle and position
             var ball_height = 30.0;
             rect_.scale.y = avg_amplitude;
-            rect_.position.set(rect_.position.x, avg_amplitude * 0.5 - ball_height, rect_.position.z);
+            rect_.position.set(rect_.position.x, avg_amplitude * 0.5 - ball_height - offset_y, rect_.position.z);
 
             rect_.material.color.setRGB(avg_amplitude / 255.0,0.5,0);
 

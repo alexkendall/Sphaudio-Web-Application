@@ -46,7 +46,10 @@ $(document).ready(function () {
   {
       document.getElementById('audioElement').src = './audio/Kendrick Lamar - M.A.A.D. City.mp3';
   }
-  
+  if(songNumber == "14")
+  {
+    document.getElementById('audioElement').src = 'gone.m4a';
+  }
 
 
   var audioCtx = new (window.AudioContext || window.webkitAudioContext)();

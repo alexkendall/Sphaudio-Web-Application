@@ -16,11 +16,11 @@ $(document).ready(function () {
   }
   if(songNumber == "6")
   {
-      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+      document.getElementById('audioElement').src = './audio/Calvin Harris Disciples - How Deep Is Your Love.mp3';
   }
   if(songNumber == "7")
   {
-      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+      document.getElementById('audioElement').src = './audio/Coldplay - A Sky Full Of Stars (Official audio).mp3';
   }
   if(songNumber == "8")
   {
@@ -28,15 +28,15 @@ $(document).ready(function () {
   }
   if(songNumber == "9")
   {
-      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+      document.getElementById('audioElement').src = './audio/Martin Garrix - Forbidden Voices.mp3';
   }
   if(songNumber == "10")
   {
-      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+      document.getElementById('audioElement').src = './audio/03 How To Save A Life.m4a';
   }
   if(songNumber == "11")
   {
-      document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+      document.getElementById('audioElement').src = './audio/04 The One Who Saves.m4a';
   }
   if(songNumber == "12")
   {

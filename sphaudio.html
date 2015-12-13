@@ -52,7 +52,7 @@
               function switchSong(name, i){
                 document.getElementById('audioElement').src = name;
                 document.getElementById(i).style.backgroundColor = '#878FA1';
-                for (x = 1; x < 7; x++){
+                for (x = 1; x < 10; x++){
                   if (x === i) {
                     
                   }
@@ -64,7 +64,7 @@
             </script>
 
             <div>
-            <audio controls id="audioElement" style="margin-top:10px; width: 100%; align: center;">
+            <audio autoplay controls id="audioElement" style="margin-top:10px; width: 100%; align: center;">
               <source src="./audio/Odesza - Above The Middle.mp3">
             </audio> 
             </div>
@@ -125,15 +125,15 @@
                                 <td>Forbidden Voices</td>
                                 <td>Forbidden Voices</td>
                             </tr>
-                            <tr onclick="alert('test')">
-                                <td>John</td>
-                                <td>Doe</td>
-                                <td>john@example.com</td>
+                            <tr onclick="switchSong('./audio/03 How To Save A Life.m4a', 7)">
+                                <td>How to Save a Life</td>
+                                <td>The Fray</td>
+                                <td>How to Save a Life</td>
                             </tr>
-                            <tr onclick="alert('test')">
-                                <td>John</td>
-                                <td>Doe</td>
-                                <td>john@example.com</td>
+                            <tr onclick="switchSong('./audio/04 The One Who Saves.m4a', 8)">
+                                <td>The One Who Saves</td>
+                                <td>Hillsong Live</td>
+                                <td>A Beautiful Exchange</td>
                             </tr>
                             <tr onclick="alert('test')">
                                 <td>John</td>

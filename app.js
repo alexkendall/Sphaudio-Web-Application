@@ -9,46 +9,57 @@ $(document).ready(function () {
   if(songNumber == "4")
   {
       document.getElementById('audioElement').src = './audio/Odesza - Above The Middle.mp3';
+      document.getElementById(1).style.backgroundColor = '#878FA1';
   }
   if(songNumber == "5")
   {
       document.getElementById('audioElement').src = './audio/11 Particles of the Universe (Elysian Fields).mp3';
+      document.getElementById(2).style.backgroundColor = '#878FA1';
   }
   if(songNumber == "6")
   {
       document.getElementById('audioElement').src = './audio/Calvin Harris Disciples - How Deep Is Your Love.mp3';
+      document.getElementById(3).style.backgroundColor = '#878FA1';
   }
   if(songNumber == "7")
   {
       document.getElementById('audioElement').src = './audio/Coldplay - A Sky Full Of Stars (Official audio).mp3';
+      document.getElementById(4).style.backgroundColor = '#878FA1';
   }
   if(songNumber == "8")
   {
       document.getElementById('audioElement').src = './audio/Sorry - Justin Bieber.mp3';
+      document.getElementById(5).style.backgroundColor = '#878FA1';
   }
   if(songNumber == "9")
   {
       document.getElementById('audioElement').src = './audio/Martin Garrix - Forbidden Voices.mp3';
+      document.getElementById(6).style.backgroundColor = '#878FA1';
   }
   if(songNumber == "10")
   {
       document.getElementById('audioElement').src = './audio/Hozier-From Eden.mp3';
+      document.getElementById(7).style.backgroundColor = '#878FA1';
   }
   if(songNumber == "11")
   {
       document.getElementById('audioElement').src = './audio/The Beatles - Come Together.mp3';
+      document.getElementById(8).style.backgroundColor = '#878FA1';
   }
   if(songNumber == "12")
   {
       document.getElementById('audioElement').src = './audio/Beethoven -Symphony No 5.mp3';
+      document.getElementById(9).style.backgroundColor = '#878FA1';
   }
   if(songNumber == "13")
   {
       document.getElementById('audioElement').src = './audio/Kendrick Lamar - M.A.A.D. City.mp3';
+      document.getElementById(10).style.backgroundColor = '#878FA1';
   }
   if(songNumber == "14")
   {
     document.getElementById('audioElement').src = './audio/gone.m4a';
+    document.getElementById(11).style.backgroundColor = '#878FA1';
   }
 
 
